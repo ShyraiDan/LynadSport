@@ -1,4 +1,6 @@
 .container {
+  @apply bg-black;
+
   .top {
     @apply object-cover bg-[url('./../i/1.webp')] mx-auto pt-[30px] px-4 pb-0 w-full h-[500px];
 
@@ -17,7 +19,7 @@
         }
 
         a {
-          @apply block text-center mt-4 text-white bg-[#1b7bd7] p-2 rounded-md mt-4 hover:bg-[#0e4aa4];
+          @apply block text-center font-bold mt-4 bg-red p-2 rounded-md mt-4 hover:bg-[#C14D42];
         }
       }
     }
@@ -27,7 +29,7 @@
     @apply p-4 max-w-[1320px] mx-auto;
 
     h2 {
-      @apply mb-5 text-center font-bold text-2xl;
+      @apply mb-5 text-center text-red font-bold text-2xl;
     }
 
     > div {

@@ -1,16 +1,15 @@
 import Header from '@/component/Header/Header'
 import Link from 'next/link'
 import NewsCard from '@/component/NewsCard/NewsCard'
-
-import hero from '@/i/1.webp'
+import Sponsors from '@/component/Sponsors/Sponsors'
 
 import styles from './HomePage.module.scss'
 
 export default function Home() {
   return (
     <>
-      <Header />
       <div className={styles.container}>
+        <Header />
         <div className={styles.top}>
           <div>
             <div>
@@ -40,7 +39,9 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={styles.sponsors}></div>
+        <div className={styles.sponsors}>
+          <Sponsors />
+        </div>
       </div>
     </>
   )
