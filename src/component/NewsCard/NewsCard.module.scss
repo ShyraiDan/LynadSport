@@ -1,0 +1,30 @@
+.card {
+  @apply bg-blue-100 shadow-md rounded-md shadow
+  hover:shadow-xl;
+
+  img {
+    @apply rounded-t-md max-h-[300px];
+  }
+
+  > div {
+    @apply p-4;
+
+    > div {
+      > p {
+        @apply text-sm;
+      }
+
+      h4 {
+        @apply mb-4 font-bold text-xl;
+      }
+    }
+
+    a {
+      @apply flex items-center;
+
+      svg {
+        @apply ml-2;
+      }
+    }
+  }
+}

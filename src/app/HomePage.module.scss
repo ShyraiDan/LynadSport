@@ -1,0 +1,37 @@
+.container {
+  .top {
+    @apply object-cover bg-[url('./../i/1.webp')] mx-auto pt-[30px] px-4 pb-0 w-full h-[500px];
+
+    > div {
+      @apply flex justify-center;
+
+      > div {
+        @apply mt-[120px];
+
+        h1 {
+          @apply font-bold mt-[10px] mb-[20px] text-center text-[36px] text-black;
+        }
+
+        p {
+          @apply text-center text-[18px] text-black;
+        }
+
+        a {
+          @apply block text-center mt-4 text-white bg-[#1b7bd7] p-2 rounded-md mt-4 hover:bg-[#0e4aa4];
+        }
+      }
+    }
+  }
+
+  .top-news {
+    @apply p-4 max-w-[1320px] mx-auto;
+
+    h2 {
+      @apply mb-5 text-center font-bold text-2xl;
+    }
+
+    > div {
+      @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4;
+    }
+  }
+}

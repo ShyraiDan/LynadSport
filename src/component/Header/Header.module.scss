@@ -1,3 +1,41 @@
 .header {
-  // @apply
+  @apply sticky top-0 z-20 w-full backdrop-blur bg-white bg-opacity-80;
+
+  .header-container {
+    @apply flex items-center p-4 justify-between
+    lg:max-w-[1320px] lg:mx-auto;
+
+    .header-left {
+      @apply flex items-center;
+
+      > a {
+        @apply text-blue-300 sm:text-2xl;
+      }
+
+      a {
+        @apply font-bold p-2;
+
+        span {
+          @apply text-purple-100;
+        }
+      }
+    }
+
+    .header-right {
+      @apply flex items-center;
+    }
+
+    .nav-list {
+      @apply hidden 
+      lg:flex lg:items-center lg:gap-3 lg:ml-5;
+    }
+
+    .nav-item {
+      @apply flex items-center font-bold;
+
+      a {
+        @apply text-blue-200;
+      }
+    }
+  }
 }
