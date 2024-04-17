@@ -62,31 +62,16 @@ export default function Sponsors() {
               510: {
                 slidesPerView: 4
               },
-              576: {
-                slidesPerView: 3
-              },
-              700: {
-                slidesPerView: 4
-              },
-              768: {
-                slidesPerView: 2
-              },
-              840: {
-                slidesPerView: 3
-              },
-              992: {
-                slidesPerView: 4
-              },
-              1150: {
+              620: {
                 slidesPerView: 5
               },
-              1300: {
+              730: {
                 slidesPerView: 6
               },
-              1450: {
+              840: {
                 slidesPerView: 7
               },
-              1600: {
+              950: {
                 slidesPerView: 8
               }
             }}

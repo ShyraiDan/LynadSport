@@ -2,6 +2,7 @@ import Header from '@/component/Header/Header'
 import Link from 'next/link'
 import NewsCard from '@/component/NewsCard/NewsCard'
 import Sponsors from '@/component/Sponsors/Sponsors'
+import Footer from '@/component/Footer/Footer'
 
 import styles from './HomePage.module.scss'
 
@@ -43,6 +44,7 @@ export default function Home() {
           <Sponsors />
         </div>
       </div>
+      <Footer />
     </>
   )
 }
