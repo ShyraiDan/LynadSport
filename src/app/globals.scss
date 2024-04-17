@@ -19,6 +19,15 @@
 html {
   overflow-x: hidden;
 }
+
+.swiper-pagination-bullet {
+  background: #b4b4b4 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #e74c3c !important;
+}
+
 /* 
 @layer utilities {
   .text-balance {

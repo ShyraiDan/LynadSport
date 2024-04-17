@@ -3,7 +3,7 @@
 import styles from './Sponsors.module.scss'
 import Image from 'next/image'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Navigation, Pagination } from 'swiper/modules'
+import { Autoplay, Navigation, Pagination } from 'swiper/modules'
 
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -18,7 +18,24 @@ import adidas from '@/i/adidas.png'
 import cola from '@/i/coca.png'
 import visa from '@/i/visa.png'
 
-const arr = [intel, predator, dhl, monster, whiteMarket, adidas, cola, visa]
+const arr = [
+  intel,
+  predator,
+  dhl,
+  monster,
+  whiteMarket,
+  adidas,
+  cola,
+  visa,
+  intel,
+  predator,
+  dhl,
+  monster,
+  whiteMarket,
+  adidas,
+  cola,
+  visa
+]
 
 export default function Sponsors() {
   return (
@@ -30,6 +47,11 @@ export default function Sponsors() {
             pagination
             centeredSlides={true}
             spaceBetween={10}
+            loop={true}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false
+            }}
             breakpoints={{
               320: {
                 slidesPerView: 2
@@ -69,10 +91,10 @@ export default function Sponsors() {
               }
             }}
             slidesPerView={1}
-            modules={[Navigation, Pagination]}>
-            {arr.map((item) => {
+            modules={[Autoplay, Pagination, Navigation]}>
+            {arr.map((item, i) => {
               return (
-                <SwiperSlide>
+                <SwiperSlide key={'item-' + i}>
                   <div className={styles.sponsor}>
                     <Image src={item} alt='logo' />
                   </div>
