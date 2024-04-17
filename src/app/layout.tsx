@@ -1,6 +1,10 @@
 import type { Metadata } from 'next'
 import { Roboto } from 'next/font/google'
+import Header from '@/component/Header/Header'
+import Footer from '@/component/Footer/Footer'
+
 import './globals.scss'
+import styles from './layout.module.scss'
 
 const font = Roboto({
   subsets: ['cyrillic', 'latin'],
@@ -22,7 +26,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={font.className}>{children}</body>
+      <body className={font.className}>
+        <div className={styles.container}>
+          <Header />
+          {children}
+        </div>
+        <Footer />
+      </body>
     </html>
   )
 }
