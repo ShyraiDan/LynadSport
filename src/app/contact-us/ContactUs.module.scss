@@ -1,0 +1,55 @@
+.container {
+  @apply px-4 flex flex-col
+  md:mt-16 md:flex-row md:min-h-[calc(100vh-72px-168px-64px)]
+  lg:min-h-[calc(100vh-72px-96px-64px)]
+  2xl:max-w-[1320px] 2xl:mx-auto;
+
+  .left {
+    @apply basis-1/2;
+
+    h1 {
+      @apply text-3xl text-white px-6 font-bold;
+    }
+
+    p {
+      @apply px-6 mb-2 pt-2 text-justify text-white text-base font-medium;
+    }
+  }
+
+  .form {
+    @apply mt-6 px-2 basis-1/2 text-white
+    sm:mt-0
+    lg:pl-0
+    xl:pl-12;
+
+    > div {
+      @apply bg-[#1d1d1bcc] p-6 shadow-[0_.5rem_1rem_rgba(0,0,0,.15)] border-0 rounded-[20px] overflow-hidden 
+      sm:p-12 
+      lg:m-0
+      xl:p-24;
+
+      form {
+        div {
+          @apply mb-4;
+
+          label {
+            @apply block font-semibold mb-2;
+          }
+
+          input,
+          textarea {
+            @apply resize-none font-medium bg-[#1d1d1bcc] text-[#6c757d] opacity-90 px-3 py-1.5 rounded border border-[#ced4da] w-full;
+          }
+        }
+
+        button {
+          @apply px-3 rounded;
+        }
+
+        .error {
+          @apply text-red mt-1.5 text-sm;
+        }
+      }
+    }
+  }
+}
