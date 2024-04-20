@@ -4,6 +4,7 @@ import styles from './ContactUs.module.scss'
 import { Button } from '@/component/UI/Button/Button'
 import { Input } from '@/component/UI/Input/Input'
 import { useForm, SubmitHandler } from 'react-hook-form'
+import Map from '@/component/Map/Map'
 
 interface IContactUS {
   userName: string
@@ -35,7 +36,9 @@ export default function ContactUsPage() {
           us.
         </p>
         <p>We are also proud to work with other similar corporations and investors.</p>
+        <Map />
       </div>
+
       <div className={styles.form}>
         <div>
           <form action='' onSubmit={handleSubmit(onSubmit)}>
