@@ -1,0 +1,72 @@
+.burger-btn {
+  @apply ml-3 w-[30px] h-[20px] relative z-[1] cursor-pointer
+  lg:hidden;
+
+  span {
+    @apply absolute left-0 h-[2px] w-full top-[9px] bg-red
+    first:top-0
+    last:top-[18px];
+  }
+}
+
+.layout {
+  @apply fixed top-0 left-0 w-full h-screen z-10 bg-neutral-800 opacity-50;
+}
+
+.burger {
+  @apply bg-[#1d1d1b] fixed top-0 left-[-100%] h-[100vh] w-[290px] px-2.5 z-[20] flex justify-between flex-col transition-all ease-in-out duration-300
+  lg:hidden;
+
+  .top {
+    > div {
+      @apply py-4 flex justify-between items-center border-b border-[#0000001a];
+
+      h2 {
+        @apply font-bold text-2xl;
+
+        a {
+          @apply text-red;
+
+          span {
+            @apply text-white;
+          }
+        }
+      }
+
+      svg {
+        @apply cursor-pointer;
+      }
+    }
+
+    ul {
+      @apply py-4;
+
+      li {
+        @apply flex items-center justify-between leading-5 my-1 text-red;
+
+        a {
+          @apply font-medium my-1 capitalize;
+        }
+      }
+    }
+  }
+
+  .bottom {
+    .social {
+      @apply flex justify-center border-t text-red border-[#0000001a] pt-4;
+
+      a {
+        @apply transition-all ease-in-out duration-150
+        hover:text-purple-100;
+      }
+    }
+
+    ul {
+      @apply flex gap-3 items-center ml-2;
+    }
+  }
+}
+
+.burger.active {
+  @apply py-2.5 px-5 left-0;
+}

@@ -1,5 +1,6 @@
 import styles from './Header.module.scss'
 import NavLink from '../UI/NavLink/NavLink'
+import Burger from './components/Burger/Burger'
 
 export default function Header() {
   return (
@@ -28,8 +29,7 @@ export default function Header() {
           </nav>
         </div>
         <div className={styles['header-right']}>
-          {/* {isAuth ? <UserModal /> : <AuthModal />}
-        <Burger /> */}
+          <Burger />
         </div>
       </div>
     </header>
