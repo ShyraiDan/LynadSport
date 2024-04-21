@@ -12,6 +12,9 @@ const config: Config = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))'
       },
+      gridTemplateColumns: {
+        gallery: 'repeat(auto-fit, minmax(250px, 1fr))'
+      },
       screens: {
         xs: '480px',
         sm: '576px',

@@ -1,0 +1,31 @@
+.container {
+  @apply lg:max-w-[1320px] lg:mx-auto;
+
+  .grid-wrapper {
+    @apply grid gap-2.5 
+    grid-cols-gallery
+    auto-rows-[200px]
+    grid-flow-dense;
+
+    > div {
+      @apply flex justify-center items-center;
+
+      > img {
+        @apply max-w-full h-auto align-middle inline-block w-full h-full object-cover rounded;
+      }
+    }
+
+    .wide {
+      grid-column: span 2;
+    }
+
+    .tall {
+      grid-row: span 2;
+    }
+
+    .big {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+  }
+}
