@@ -3,6 +3,7 @@ import NewsCard from '@/component/NewsCard/NewsCard'
 import Sponsors from '@/component/Sponsors/Sponsors'
 
 import styles from './HomePage.module.scss'
+import NewsList from '@/component/NewsList/NewsList'
 
 export default function Home() {
   return (
@@ -21,18 +22,7 @@ export default function Home() {
       </div>
       <div className={styles['top-news']}>
         <h2>Latest news</h2>
-        <div>
-          <NewsCard />
-          <NewsCard />
-          <NewsCard />
-          <NewsCard />
-          <NewsCard />
-          <NewsCard />
-          <NewsCard />
-          <NewsCard />
-          <NewsCard />
-          <NewsCard />
-        </div>
+        <NewsList limit={10} />
       </div>
       <div className={styles.sponsors}>
         <Sponsors />

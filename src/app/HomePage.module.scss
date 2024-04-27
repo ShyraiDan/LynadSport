@@ -27,7 +27,7 @@
 }
 
 .top-news {
-  @apply p-4 max-w-[1320px] mx-auto mt-7;
+  @apply p-4 max-w-[1320px] mx-auto mt-7 min-h-[50vh];
 
   h2 {
     @apply mb-5 text-center text-red font-bold text-3xl;

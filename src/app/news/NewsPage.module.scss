@@ -1,5 +1,5 @@
 .container {
-  @apply p-4 bg-black;
+  @apply p-4 bg-black min-h-[100vh];
 
   > div {
     @apply lg:max-w-[1320px] lg:mx-auto;
@@ -13,7 +13,9 @@
     }
 
     .news-group {
-      @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4;
+      @apply grid grid-cols-1 gap-4
+      md:grid-cols-2 
+      lg:grid-cols-3;
     }
   }
 }

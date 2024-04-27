@@ -1,5 +1,5 @@
 import styles from './NewsPage.module.scss'
-import NewsCard from '@/component/NewsCard/NewsCard'
+import NewsList from '@/component/NewsList/NewsList'
 
 export default function page() {
   return (
@@ -8,17 +8,7 @@ export default function page() {
         <div className={styles.top}>
           <h2>News</h2>
         </div>
-        <div className={styles['news-group']}>
-          <NewsCard />
-          <NewsCard />
-          <NewsCard />
-          <NewsCard />
-          <NewsCard />
-          <NewsCard />
-          <NewsCard />
-          <NewsCard />
-          <NewsCard />
-        </div>
+        <NewsList />
       </div>
     </div>
   )

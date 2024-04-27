@@ -3,7 +3,8 @@
   hover:shadow-xl;
 
   img {
-    @apply rounded-t-md max-h-[300px];
+    @apply rounded-t-md w-full
+    md:h-[250px];
   }
 
   > div {

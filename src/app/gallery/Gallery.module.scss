@@ -1,11 +1,16 @@
 .container {
   @apply lg:max-w-[1320px] lg:mx-auto;
 
+  .top {
+    @apply my-5 text-red text-center text-2xl font-bold;
+
+    h2 {
+      @apply mb-5 text-center text-red font-bold text-3xl;
+    }
+  }
+
   .grid-wrapper {
-    @apply grid gap-2.5 
-    grid-cols-gallery
-    auto-rows-[200px]
-    grid-flow-dense;
+    @apply grid gap-2.5 grid-cols-gallery auto-rows-[200px] grid-flow-dense pb-5;
 
     > div {
       @apply flex justify-center items-center;
