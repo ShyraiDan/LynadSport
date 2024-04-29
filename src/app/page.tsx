@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import NewsCard from '@/component/NewsCard/NewsCard'
 import Sponsors from '@/component/Sponsors/Sponsors'
 
 import styles from './HomePage.module.scss'
