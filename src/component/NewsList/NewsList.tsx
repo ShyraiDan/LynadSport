@@ -12,7 +12,7 @@ export default function NewsList({ limit }: { limit?: number }) {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`http://localhost:3000/api/news?${limit && `limit=${limit}`}`)
+        const response = await axios.get(`https://lynad-sport.vercel.app/api/news?${limit && `limit=${limit}`}`)
 
         setData(response.data.news)
       } catch (error) {
